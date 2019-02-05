@@ -1,0 +1,282 @@
+html,body{
+    width:100%;
+    height:100%;
+    font-family:"Open Sans", sans-serif;
+    font-size:0.9em;
+    font-weight:400;
+    color:rgb(30,30,30);
+    letter-spacing:-0.02em;
+    background:rgb(240,240,240);
+    margin:0;
+    padding:0;
+}
+
+div, input, p, a{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#header{
+    position:relative;
+    margin-top:0px !important;
+    margin:0;
+    height:150px;
+    background:#16a085;
+}
+
+#container{
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    position:fixed;
+    width:90%;
+    height:95%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    background:rgb(245,235,235);
+}
+
+.pane{
+    position: relative;
+    display:inline-block;
+    vertical-align:top;
+}
+
+#contacts{
+    height:100%;
+    width:25%;
+    border-right:1px solid rgba(20,20,20,0.08);
+    background:white;
+}
+
+#messages{
+    height:100%;
+    width:75%;
+}
+
+.title{
+    position:relative;
+    width:100%;
+    background:rgb(240,240,240);
+    padding:10px;
+    height:55px;
+    text-align:right;
+}
+
+.title .profile_img{
+    position:absolute;
+    left:10px;
+    top:10px;
+    display:inline-block;
+    border-radius:50%;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+    text-align:center;
+    font-weight:300;
+    font-size:2em;
+    width:35px;
+    height:35px;
+    padding:0px 3px;
+}
+
+.title #chat_icon{
+    display:inline-block;
+    margin:0px 5px;
+    width:30px;
+    height:30px;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+    background-size:15px auto !important;
+}
+
+.title .options_icon{
+    display:inline-block;
+    margin:0px 5px;
+    width:30px;
+    height:30px;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+    background-size:15px auto !important;
+}
+
+.title #chat_name{
+
+}
+
+.title #chat_details{
+
+}
+
+.title #attach{
+    display:inline-block;
+    margin:0px 5px;
+    width:30px;
+    height:30px;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+    background-size:15px auto !important;
+}
+
+
+/* CONTACTS */
+
+.search{
+    background:rgb(250,250,250);
+    width:100%;
+    padding:10px 20px;
+}
+
+.search input{
+    width:100%;
+    display:block;
+    padding:9px 9px 9px 35px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,0.05);
+    background: url('images/search.png') no-repeat;
+    background-position: 15px center;
+    background-size:13px auto;
+    outline:none;
+}
+
+.search input[type="text"]::-ms-input-placeholder{
+    font-family:"Open Sans", sans-serif;
+    font-size:0.7em;
+}
+
+/* ADD SEARCH ICON */
+
+.contact{
+    height:80px;
+    width:100%;
+    position: relative;
+    overflow:hidden;
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    padding:15px 20px;
+}
+
+.contact .img{
+    position:absolute;
+    left:20px;
+    top:10px;
+    width:60px;
+    height:60px;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+    border-radius:50%;
+}
+
+.contact .name{
+    position: relative;
+    padding:5px 0px 0px 75px;
+    font-weight:700;
+    width:100%;
+    overflow:hidden;
+}
+
+.contact .name .time{
+    position:absolute;
+    right:20px;
+    top:7px;
+    color:rgb(140,140,140);
+    font-size:0.85em;
+    font-weight:700;
+    display:inline-block;
+}
+.contact .name .last_msg{
+    color:rgb(60,60,60);
+    font-weight:400;
+    padding-top:4px;
+}
+
+.title #chat_title{
+    position: absolute;
+    padding: 2px;
+    font-weight: bold;
+    left: 60px;
+}
+
+#last_seen{
+    position: absolute;
+    padding: 2px;
+    left: 60px;
+    top: 30px;
+}
+
+.messages.mine{
+    text-align:right;
+}
+
+.messages .last_msg{
+    display:inline-block;
+    padding: 10px;
+    background: #f7f1e3;
+    width: 50%;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+.messages.mine .last_msg{
+    text-align:left;
+    background: #78e08f;   
+}
+
+.messages .time{
+    text-align: right;
+}
+
+.mine_last_msg{
+    padding: 10px;
+    background: #78e08f;
+    width: 50%;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    position: absolute;
+    outline: none;
+    right: 0px;
+}
+
+
+#footer_bar{
+    background: rgb(250,250,250) url(images/happy.png) no-repeat;
+    width: 100%;
+    padding: 10px 70px;
+    bottom: 0px;
+    position: absolute;
+    border-radius: 10px;
+    background-size: 35px auto;
+    background-position: 15px center;
+}
+
+#footer_bar input{
+    width: 100%;
+    padding: 9px 9px 9px 40px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,0.05);
+    background: url('images/search.png') no-repeat;
+    background-position: 15px center;
+    background-size:13px auto;
+}
+
+#footer_search input[type="text"]::-ms-input-placeholder{
+    font-family:"Open Sans", sans-serif;
+    font-size:0.7em;
+}
+
+#footer_bar #mike{
+    background-image: url(images/microphone.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    display: inline-block;
+    background-size: 20px;
+    padding: 20px 30px 10px 10px;
+}
+/* CUSTOM CODE */
