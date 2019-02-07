@@ -5,6 +5,9 @@
 (deftest add
   (is (= 2 (+ 1 1))))
 
+(deftest sub
+  (is (= 0 (- 1 1))))
+
 (deftest prnt
   (is (= 5 (+ 2 1))))
 
