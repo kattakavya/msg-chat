@@ -8,6 +8,9 @@
 (deftest sub
   (is (= 0 (- 1 1))))
 
+(def test mul
+  (is (= 4 (* 2 2))))
+
 (deftest prnt
   (is (= 5 (+ 2 1))))
 
